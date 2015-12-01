@@ -119,9 +119,9 @@ public class BaiduLocation extends CordovaPlugin {
     //                    sb.append(p.getId() + " " + p.getName() + " " + p.getRank());
     //                }
     //            }
-                LOG.i(LOG_TAG, sb.toString());
+                LOG.i(LOG_TAG, json);
 
-                PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, sb.toString());
+                PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, json);
                 pluginResult.setKeepCallback(true);
                 cbCtx.sendPluginResult(pluginResult);
             } catch (JSONException e) {
